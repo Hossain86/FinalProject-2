@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+  font-family: 'Scheherazade New', serif;
+  /* background-image: url(img/welcome-02.png);
+  background-size: cover; */
+  background-color: #f1f1f1;
+  max-width: 100%;
+  transition: 0.3s;
+  
+}
+.container{
+  font-size: 20px;
+}
+.navbar{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 200px 1fr 200px;
+  height: auto;
+  align-items: center;
+  background-image: url(img/horizonal-navbar.png);
+  background-size: cover;
+  color: #fff;
+  padding: 10px 10px;
+}
+.navbar h2{
+  text-align: center;
+  margin: 0px;
+  padding: 4px;
+}
+.navbar-href{
+  display: grid;
+  justify-content: end;
+}
+
+.sidenav{
+  height: 100%;
+  width:0 ;
+  position: fixed;
+  z-index: 1;
+  /* backdrop-filter: blur(150px); */
+  background-image: url(img/navbar-2.png);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+.sidenav a{
+  padding: 8px 8px 8px 38px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 1;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav a:hover{
+  color: #8a2626;
+  font-size: 28px;
+  transition: 0.5s ease;
+}
+.open{
+  cursor: pointer;
+}
+.nav-img{
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  padding-top:0px ;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.nav-img2{
+  height: 48px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  padding-top:10px ;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-height:650px){
+  .sidenav{
+    padding-top: 15px;
+  }
+  .sidenav a{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:650px){
+  body{
+  background-image: url(img/exam-2mobile.png);
+  background-size: cover;
+  }
+  .navbar{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    padding: 10px 10px;
+  }
+  .navbar h2{
+    font-size: 20px;
+  }
+  
+  .nav-img2{
+    display: none;
+    pointer-events: none;
+  }
+  .container{
+    font-size: 16px;
+  }
+}
